@@ -7,6 +7,3 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vim-markmultiple.git"]
-	path = bundle/vim-markmultiple.git
-	url = https://github.com/adinapoli/vim-markmultiple.git

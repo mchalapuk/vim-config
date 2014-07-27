@@ -4,5 +4,3 @@
 "
 
 
-let g:mark_multiple_trigger = '<S-F6>'
-
