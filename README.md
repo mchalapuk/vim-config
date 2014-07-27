@@ -15,17 +15,21 @@ git submodule update
 ##Plugins
 * [fugitive](https://github.com/tpope/vim-fugitive)
   git wrapper
-* [markmultiple](https://github.com/adinapoli/vim-markmultiple)
-  marks several regions and edits them once
+* [multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+  enabled editing many parts of the document at once
 * [vim-golang](https://github.com/jnwhiteh/vim-golang)
   support for go language
 
 ## Bindings
-* enter - hides higlighting and behaves well in command edit mode
 * \cd - :lcd %:h
-* &lt;C-n&gt; - start mark multiple (marks occurences which you can then edit
-  at once)
-* &lt;C-m&gt; - from visual, clean after mark multiple
+* &lt;C-n&gt; (from normal) - starts multicursor mode
+    (marks a wordunder the cursor)
+* &lt;C-n&gt; (from multicursor) - finds new occurence of the highlight
+    and createsnew cursor
+* &lt;C-p&gt; (from multicursor) - deletes current cursor and jumps to previous
+* &lt;C-x&gt; (from multicursor) - deletes current cursor and creates next
+* &lt;ESC&gt; (from normal) - removes extra cursors
+* and all fugitive bindings
 
 ## Features
 * [pathogen](https://github.com/tpope/vim-pathogen) enabled
