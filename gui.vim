@@ -5,5 +5,6 @@ if has('gui_running')
   set guioptions-=r  " remove right-hand scroll bar
   set guioptions-=L  " remove left-hand scroll bar
   set guioptions-=e  " text tabs
-  set gfn=Droid\ Sans\ Mono\ Dotted\ 8
+  colorscheme desert
+  set lines=48 columns=161
 endif
