@@ -9,3 +9,9 @@ let g:multi_cursor_exit_from_insert_mode = 0
 
 let maplocalleader = "\\"
 
+let g:clang_format#style_options = {
+      \ "AccessModifierOffset" : -4,
+      \ "AllowShortIfStatementsOnASingleLine" : "true",
+      \ "AlwaysBreakTemplateDeclarations" : "true",
+      \ "Standard" : "C++11"}
+

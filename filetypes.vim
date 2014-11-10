@@ -1,25 +1,25 @@
 if has("autocmd")
 
   " filetype based settings
-  au FileType c,cpp            setl cindent tw=79 path=.,/usr/include,/usr/local/include,/usr/lib/gcc/*/*/include
-  au FileType java             setl ai ts=2 sw=2 sts=2   expandtab cindent
-  au FileType perl             setl ai ts=2 sw=2 sts=2   expandtab cindent
-  au FileType python           setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType ruby             setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType scala            setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType rust             setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType awk              setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType html,htmldjango  setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType sh,zsh           setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType vim              setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType xml              setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType css,scss.les     setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType make             setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType eruby            setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType javascript       setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType coffee           setl ai ts=2 sw=2 sts=2   expandtab
-  au FileType tex,plaintex     setl ai ts=2 sw=2 sts=2   expandtab fo+=t
-  au FileType go               setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType c,cpp,cxx,h,hpp,tpp setl cindent smartindent ts=2 sw=2 sts=2 expandtab tw=79 path=.,/usr/include,/usr/local/include,/usr/lib/gcc/*/*/include
+  au FileType java                setl ai ts=2 sw=2 sts=2   expandtab cindent
+  au FileType perl                setl ai ts=2 sw=2 sts=2   expandtab cindent
+  au FileType python              setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType ruby                setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType scala               setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType rust                setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType awk                 setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType html,htmldjango     setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType sh,zsh              setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType vim                 setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType xml                 setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType css,scss.les        setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType make                setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType eruby               setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType javascript          setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType coffee              setl ai ts=2 sw=2 sts=2   expandtab
+  au FileType tex,plaintex        setl ai ts=2 sw=2 sts=2   expandtab fo+=t
+  au FileType go                  setl ai ts=2 sw=2 sts=2   expandtab
 
   au FileType markdown         setl tw=77 fo+=t
   au FileType gitcommit        setl tw=72 fo+=t
@@ -29,9 +29,15 @@ if has("autocmd")
   " mutt detection
   augroup filetypedetect
     au BufRead,BufNewFile *mutt-* setl filetype=mail tw=72 fo+=t
+    au BufRead,BufNewFile *.cxx set filetype=cpp
+    au BufRead,BufNewFile *.tpp set filetype=cpp
   augroup END
 
-    " Enable editing of gzipped files
+  " map to <Leader>cf in C++ code
+  autocmd FileType c,cpp,cxx,h,hpp,tpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+  autocmd FileType c,cpp,cxx,h,hpp,tpp vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+  " Enable editing of gzipped files
   augroup gzip
     au!
 
