@@ -28,7 +28,7 @@ set visualbell
 set hlsearch
 
 set nojoinspaces " only one space when joinning
-set nowrap linebreak nolist
+set wrap linebreak nolist
 set showmatch matchtime=3 " matching bracket
 set matchpairs+=<:>
 set showfulltag virtualedit=block
