@@ -20,7 +20,7 @@ set backspace=indent,eol,start
 set magic
 
 set ruler
-set scrolloff=8
+set scrolloff=2
 
 set hidden " switch between buffers without saving
 
@@ -43,7 +43,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set history=1000
-set undolevels=100
+set undolevels=1000
 
 " when changing (c command) put $ on word boundary and keep it visible
 set cpoptions+=$
