@@ -45,6 +45,8 @@ set noswapfile
 set history=1000
 set undolevels=1000
 
+set clipboard=unnamedplus
+
 " when changing (c command) put $ on word boundary and keep it visible
 set cpoptions+=$
 
