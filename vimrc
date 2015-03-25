@@ -2,6 +2,9 @@ runtime bundle_setup.vim
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+set background=dark
+colorscheme solarized
+
 runtime gui.vim
 runtime mappings.vim
 runtime filetypes.vim
