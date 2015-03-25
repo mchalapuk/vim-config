@@ -15,3 +15,5 @@ let g:clang_format#style_options = {
       \ "AlwaysBreakTemplateDeclarations" : "true",
       \ "Standard" : "C++11"}
 
+let g:solarized_termtrans = 1
+
