@@ -4,6 +4,7 @@ call pathogen#infect()
 
 set background=dark
 colorscheme solarized
+call togglebg#map("<F5>")
 
 runtime gui.vim
 runtime mappings.vim
@@ -16,7 +17,6 @@ filetype plugin on
 set smarttab smartindent autoindent
 
 set fileencoding=utf-8
-set listchars=tab:▸\ ,eol:¬
 
 set backspace=indent,eol,start
 
