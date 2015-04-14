@@ -11,3 +11,10 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
+
+" Yank text to the OS X clipboard
+noremap <leader>y "*y
+noremap <leader>yy "*Y
+" Preserve indentation while pasting text from the system clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
