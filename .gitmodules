@@ -34,3 +34,9 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/Quramy/vim-js-pretty-template"]
+	path = bundle/Quramy/vim-js-pretty-template
+	url = https://github.com/Quramy/vim-js-pretty-template.git

@@ -12,9 +12,14 @@ if &term =~ '^screen'
   execute "set <xLeft>=\e[1;*D"
 endif
 
+"noremap ty "+y
+"noremap tY "+Y  // copy a whole line to the clipboard
+"noremap tp "+p  // put the text from clipboard after the cursor 
+"noremap tP "+P  // put the text from clipboard before the cursor 
+
 " Yank text to the OS X clipboard
-noremap <leader>y "*y
-noremap <leader>yy "*Y
+"noremap <leader>y "*y
+"noremap <leader>yy "*Y
 " Preserve indentation while pasting text from the system clipboard
-noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+"noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
 
