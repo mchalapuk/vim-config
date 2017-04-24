@@ -37,6 +37,9 @@ if has("autocmd")
   autocmd FileType c,cpp,cxx,h,hpp,tpp nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
   autocmd FileType c,cpp,cxx,h,hpp,tpp vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
+  " run tsc on :make when in typescript files
+  autocmd FileType typescript :set makeprg=tsc
+
   " Enable editing of gzipped files
   augroup gzip
     au!
