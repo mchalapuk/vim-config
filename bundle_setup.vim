@@ -31,7 +31,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_typescript_checkers = ['tsc'] 
 
 let g:typescript_compiler_binary = 'tsc'
-let g:typescript_compiler_options = ''
+let g:typescript_compiler_options = '--outDir /tmp/'
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
 
