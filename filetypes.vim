@@ -39,6 +39,7 @@ if has("autocmd")
 
   " run tsc on :make when in typescript files
   autocmd FileType typescript :set makeprg=tsc
+  set errorformat+=%f(%l\\\,%c):\ error\ TS%n:\ %m
 
   " Enable editing of gzipped files
   augroup gzip

@@ -26,9 +26,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_scss_checkers = ['']
 
 let g:syntastic_typescript_checkers = ['tsc'] 
+let g:syntastic_typescript_tsc_fname = ''
 
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = '--outDir /tmp/'
