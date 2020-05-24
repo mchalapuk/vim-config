@@ -10,10 +10,10 @@ let g:multi_cursor_exit_from_insert_mode = 0
 let maplocalleader = "\\"
 
 let g:clang_format#style_options = {
-      \ "AccessModifierOffset" : -4,
-      \ "AllowShortIfStatementsOnASingleLine" : "true",
-      \ "AlwaysBreakTemplateDeclarations" : "true",
-      \ "Standard" : "C++11"}
+  \ "AccessModifierOffset" : -4,
+  \ "AllowShortIfStatementsOnASingleLine" : "true",
+  \ "AlwaysBreakTemplateDeclarations" : "true",
+  \ "Standard" : "C++11"}
 
 let g:solarized_termtrans = 1
 
@@ -40,5 +40,5 @@ autocmd QuickFixCmdPost    l* nested lwindow
 
 let g:ycm_key_list_select_completion = ['<TAB>']
 let g:ycm_key_list_previous_completion = ['<S-TAB>']
-let g:ycm_server_python_interpreter = '/usr/bin/python2'
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
 
