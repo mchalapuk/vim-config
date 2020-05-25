@@ -17,6 +17,7 @@ filetype plugin on
 set smarttab smartindent autoindent
 
 set fileencoding=utf-8
+set encoding=utf-8
 
 set backspace=indent,eol,start
 
