@@ -9,17 +9,31 @@ git clone https://github.com/muroc/vim-config.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 cd ~/.vim
-git submodule init
-git submodule update
+git submodule update --init --recursive
+cd bundle/YouCompleteMe
+python install.py --go-completer --ts-completer --clang-completer
 ```
 
-##Plugins
+## Plugins
 * [fugitive](https://github.com/tpope/vim-fugitive)
   git wrapper
 * [multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
   enabled editing many parts of the document at once
 * [vim-golang](https://github.com/jnwhiteh/vim-golang)
   support for go language
+* vim-coffee-script
+* vim-glsl
+* vim-golang
+* vim-markdown
+* vim-orgmode
+* vim-puppet
+* vim-speeddating
+* editorconfig-vim
+* typescript-vim
+* vim-colors-solatized
+* YouCompleteMe
+* Quramy
+* syntastic
 
 ## Bindings
 * \cd - :lcd %:h
