@@ -8,6 +8,7 @@ Based on [ivyl/vim-config](https://github.com/ivyl/vim-config).
 git clone https://github.com/muroc/vim-config.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
+ln -s ~/.vim/hyper.js ~/.hyper.js
 cd ~/.vim
 git submodule update --init --recursive
 cd bundle/YouCompleteMe
@@ -31,7 +32,6 @@ python install.py --go-completer --ts-completer --clang-completer
 * editorconfig-vim
 * typescript-vim
 * vim-colors-solatized
-* YouCompleteMe
 * Quramy
 * syntastic
 

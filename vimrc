@@ -46,10 +46,10 @@ set textwidth=78
 set nobackup
 set nowritebackup
 set noswapfile
-set history=1000
-set undolevels=1000
+set history=2000
+set undolevels=2000
 
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " when changing (c command) put $ on word boundary and keep it visible
 set cpoptions+=$
