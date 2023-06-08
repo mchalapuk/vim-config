@@ -11,8 +11,6 @@ ln -s ~/.vim/tmux.conf ~/.tmux.conf
 ln -s ~/.vim/hyper.js ~/.hyper.js
 cd ~/.vim
 git submodule update --init --recursive
-cd bundle/YouCompleteMe
-python install.py --go-completer --ts-completer --clang-completer
 ```
 
 ## Plugins
@@ -31,7 +29,7 @@ python install.py --go-completer --ts-completer --clang-completer
 * vim-speeddating
 * editorconfig-vim
 * typescript-vim
-* vim-colors-solatized
+* vim-colors-solarized
 * Quramy
 * syntastic
 
