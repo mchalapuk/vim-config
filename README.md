@@ -8,7 +8,8 @@ Based on [ivyl/vim-config](https://github.com/ivyl/vim-config).
 git clone https://github.com/muroc/vim-config.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
-ln -s ~/.vim/hyper.js ~/.hyper.js
+mkdir -p ~/.config/ghostty
+ln -s ~/.vim/ghostty.config ~/.config/ghostty/config
 cd ~/.vim
 git submodule update --init --recursive
 ```
