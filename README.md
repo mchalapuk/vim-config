@@ -5,7 +5,7 @@ Based on [ivyl/vim-config](https://github.com/ivyl/vim-config).
 ## Installation
 
 ```bash
-git clone https://github.com/muroc/vim-config.git ~/.vim
+git clone git@github.com:mchalapuk/vim-config.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 mkdir -p ~/.config/ghostty
