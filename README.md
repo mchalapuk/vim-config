@@ -7,6 +7,7 @@ Based on [ivyl/vim-config](https://github.com/ivyl/vim-config).
 ```bash
 git clone git@github.com:mchalapuk/vim-config.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/zshrc ~/.zshrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 mkdir -p ~/.config/ghostty
 ln -s ~/.vim/ghostty.config ~/.config/ghostty/config
