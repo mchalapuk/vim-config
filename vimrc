@@ -56,7 +56,10 @@ set cpoptions+=$
 
 set wildmenu
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.pyca
+
+set viminfofile=~/.vim/viminfo
+
 
 if has("autocmd")
   " enter will work in command edit mode as intended
