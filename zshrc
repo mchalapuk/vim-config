@@ -11,3 +11,5 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export GIT_CONFIG_GLOBAL="$HOME/.config/git"
 
+export PATH="$HOME/.local/bin:$PATH"
+
